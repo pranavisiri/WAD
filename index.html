@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+    <header>
+        
+        <a href="#" class="logo"><i class="fas-fa-utensils"></i>Restaurant</a>
+
+        <div class="nav-search">
+        
+            <input placeholder="Search for Restaurant and Food" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">order</a>
+            <a href="booktable.html">BookTable</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars id="menu-bars"></i>
+            <!-- <i class="fas fa-search id="search-icon"></i> -->
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+
+
+<!-- <form action="" id="search-form">
+    <input type="search" placeholder="search..." name="" id="search">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form> -->
+
+
+<section class="home" id="home">
+    <div class=" swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    
+                    <h3>Biryani</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+                    <a href="#" class="btn">Order</a>
+                </div>
+                <div class="image">
+                    <img src="Biryani1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    
+                    <h3>Pizza</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+                    <a href="#" class="btn">Order</a>
+                </div>
+                <div class="image">
+                    <img src="pizza1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    
+                    <h3>Burger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+                    <a href="#" class="btn">Order</a>
+                </div>
+                <div class="image">
+                    <img src="Burger1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- 
+<section class="home" id="home">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h3>Biryani</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+        <img class="d-block w-100" src="Biryani1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <h3>Pizza</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+        <img class="d-block w-100" src="pizza1.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <h3>Burger</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi distinctio debitis totam quasi non?</p>
+        <img class="d-block w-100" src="Burger1.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</section> -->
+
+
+
+
+
+<section class="dishes" id="dishes">
+
+    <!-- <h3 class="sub-heading"> Our Menu</h3> -->
+    <h2 class="heading">Our Menu</h2>
+
+    <div class="box-container">
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish1.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+    
+
+    
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish2.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+    
+
+    
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish3.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+    
+
+    
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish4.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+   
+
+    
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish5.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+    
+
+    
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish6.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish7.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+
+        <div class="box">
+            <!-- <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a> -->
+            <img src="dish8.jpeg" alt="">
+            <h3>food</h3>
+            <span>100/-Rs</span>
+            <a href="#" class="btn">order</a>
+        </div>
+    
+    </div>
+
+</section>
+
+
+<!-- <section class="order" id="order">
+
+
+<form id="orderForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="foodItem">Food Item:</label>
+    <select id="foodItem" name="foodItem" required>
+        <option value="">Select Food Item</option>
+        <option value="Biryani">Biryani</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <button type="submit">Place Order</button>
+    <a href="#" class="btn">Place Order</a>
+</form>
+
+</section>
+
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Add your form submission logic here
+        // You can use JavaScript to send the form data to a server or perform other actions
+    });
+</script> -->
+
+
+
+
+
+<!-- About section -->
+
+<section class="about" id="about">
+    <h3 class="sub-heading">About Us</h3>
+    <!-- <h1 class="heading">why choose us?</h1> -->
+    <div class="row">
+        <!-- <div class="image">
+            <img src="" alt="">
+        </div> -->
+
+        <div class="content">
+            <h3>good food</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo saepe vel velit voluptatum. In molestias quas sunt, atque, doloremque magni facere earum error veniam, sint dolore eveniet iure? Magnam, optio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laborum voluptatem ipsum sit? Ratione nam similique nesciunt ipsa dicta cupiditate.</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+            </div>
+
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payments</span>
+                </div>
+            </div>
+
+            <!-- <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 services</span>
+                </div>
+            </div> -->
+
+            <a href="#" class="btn">learn more</a>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Footer section-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">India</a>
+            <a href="#">India</a>
+            <a href="#">India</a>
+            <a href="#">India</a>
+            <a href="#">India</a>
+        </div>
+
+        <div class="box">
+            <h3>Links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact</h3>
+            <a href="#">1436252</a>
+            <a href="#">9757386</a>
+            <a href="#">abcd@gmail.com</a>
+            <a href="#">jkhfv@gmail.com</a>
+            <a href="#">Hyderabad, Telangana, India, 500043</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us at</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">x</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright 2023-<span>abcd</span></div>
+</section>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+    <div id="accountForms">
+        <!-- Account Creation Form -->
+        <form id="createAccountForm">
+            <label for="createUsername">Username:</label>
+            <input type="text" id="createUsername" name="createUsername" required>
+
+            <label for="createPassword">Password:</label>
+            <input type="password" id="createPassword" name="createPassword" required>
+
+            <label for="createEmail">Email:</label>
+            <input type="email" id="createEmail" name="createEmail" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="switch-form">
+            <span>Already have an account?</span>
+            <button onclick="toggleForms()">Login</button>
+        </div>
+    </div>
+
+    <div id="loginForm" style="display:none;">
+        <!-- Login Form -->
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="switch-form">
+            <span>Don't have an account?</span>
+            <button onclick="toggleForms()">Create Account</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleForms() {
+            document.getElementById('accountForms').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+        }
+
+        document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Fetch the form data
+            const username = document.getElementById('createUsername').value;
+            const password = document.getElementById('createPassword').value;
+            const email = document.getElementById('createEmail').value;
+
+            // You should send this data to the server for secure storage and processing
+            console.log("Account created with username: " + username + ", password: " + password + ", and email: " + email);
+
+            // For a real implementation, you would use AJAX to send the data to the server
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Fetch the form data
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // You should send this data to the server for authentication
+            console.log("Login attempt with username: " + username + " and password: " + password);
+
+            // For a real implementation, you would use AJAX to send the data to the server
+        });
+    </script>
+
+</body>
+</html>
